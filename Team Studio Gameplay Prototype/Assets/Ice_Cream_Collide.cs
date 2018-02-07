@@ -19,6 +19,7 @@ public class Ice_Cream_Collide : MonoBehaviour {
 
 			Debug.Log ("Ground");
 			Camera_Positioning.Ice_Cream_Focus = false; // telling the camera to no longer focus on ice cream
+			Scene_Manager_2.Is_Object_Selected = false;
 		}
 
 	}

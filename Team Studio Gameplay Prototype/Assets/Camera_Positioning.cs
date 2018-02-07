@@ -63,6 +63,7 @@ public class Camera_Positioning : MonoBehaviour {
 		transform.position = Vector3.Lerp (transform.position, new Vector3 (Camera_Final_Position.transform.position.x, Camera_Final_Position.transform.position.y, transform.position.z), Time.deltaTime * 2); // lerp the camera to the icecreams position
 		GetComponent<Camera>().orthographicSize = Mathf.Lerp(GetComponent<Camera>().orthographicSize,Camera_Large_Size,Time.deltaTime*Zoom_Speed); // lerping our camera to the next size that we need it to be at
 
+
 		yield return new WaitForSeconds (1);
 		Fader.color = Color.Lerp (Fader.color, Fader_Color_Final, Time.deltaTime * 20);
 
