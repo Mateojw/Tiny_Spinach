@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Lighting - Mateo.unity
+- path: Assets/Scenes/Lighting_CYRUS.unity
   isLoaded: 1
   isActive: 1

@@ -18,7 +18,6 @@ public class Ice_Cream_Collide : MonoBehaviour {
 		if (col.gameObject.name == "Ice_Cream") { // if the ground has collided with ice cream
 
 			Debug.Log ("Ground");
-
 			Camera_Positioning.Ice_Cream_Focus = false; // telling the camera to no longer focus on ice cream
 		}
 
