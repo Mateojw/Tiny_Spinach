@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Selectable
   - Scene_Manager
+  - Ground
+  - Ice_Cream
   layers:
   - Default
   - TransparentFX
@@ -15,8 +17,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Ice_Cream
+  - Home_Boy
   - 
   - 
   - 

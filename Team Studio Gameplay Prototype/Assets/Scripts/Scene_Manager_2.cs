@@ -18,7 +18,7 @@ public class Scene_Manager_2 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log (Selected_Object_Name);
+//		Debug.Log (Selected_Object_Name);
 
 	}
 }

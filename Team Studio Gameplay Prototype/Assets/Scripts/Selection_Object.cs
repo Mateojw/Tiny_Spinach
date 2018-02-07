@@ -10,12 +10,17 @@ public class Selection_Object : MonoBehaviour {
 	Color Original_Color; // creating a placeholder for our original color
 	public float speed = 1f;
 
+
+
+
 	bool Object_Can_Move; // creating a bool to see if the gameobject can move
 
 	// Use this for initialization
 	void Start () {
 		rb = GetComponent<Rigidbody2D> (); //linking the rigidbody
 		Original_Color = GetComponent<SpriteRenderer> ().color; // setting our original color to be the color of our sprite
+
+	
 	}
 	
 	// Update is called once per frame
