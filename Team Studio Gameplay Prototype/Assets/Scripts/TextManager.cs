@@ -37,16 +37,22 @@ public class TextManager : MonoBehaviour {
 
 		if (Input.GetKeyDown (KeyCode.Mouse0) && currentLine < endAtLine ) {
 			currentLine += 1;
-		}
-
-		Debug.Log ("hello");
+			}
+			
 		Debug.Log (My_Ice_Cream_Collide.Grounded);
-		if (My_Ice_Cream_Collide.Grounded == true) {
-			currentLine = 2;
+		if (My_Ice_Cream_Collide.Grounded == true && currentLine < 4) {
+			currentLine = 4;
+		}
+			if (Input.GetKeyDown (KeyCode.Mouse0) && currentLine >= 4) {
+				currentLine += 1;
+			}
+
+
 		}
 
 		//if (currentLine > endAtLine) {
 			//textBox.SetActive (false);
 		//}
-	}
+
+
 }
