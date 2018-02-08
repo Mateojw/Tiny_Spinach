@@ -154,6 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7eedea49ac96841bcb3e1b72b2c79e06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 0}
 --- !u!1 &382359163
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,9 +287,10 @@ GameObject:
   - component: {fileID: 1013422304}
   - component: {fileID: 1013422306}
   - component: {fileID: 1013422307}
+  - component: {fileID: 1013422308}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Spotlight_Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -361,7 +363,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb071cca6bf024a829290cb0627e8518, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 0}
   Selected_Color: {r: 1, g: 0, b: 0, a: 0}
+  speed: 1
 --- !u!61 &1013422307
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -387,6 +391,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1013422308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1013422303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cea8244f614046e59f8abc646a4cf89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1368880697
 GameObject:
   m_ObjectHideFlags: 0
@@ -524,6 +539,8 @@ GameObject:
   - component: {fileID: 1928091942}
   - component: {fileID: 1928091941}
   - component: {fileID: 1928091943}
+  - component: {fileID: 1928091945}
+  - component: {fileID: 1928091944}
   m_Layer: 0
   m_Name: WOW
   m_TagString: Untagged
@@ -564,7 +581,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: f779fa402d0494d719bdb8a5c75cce4a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.865}
   m_FlipX: 0
@@ -603,6 +620,37 @@ CircleCollider2D:
   m_Offset: {x: -1.035, y: 1.354}
   serializedVersion: 2
   m_Radius: 0.17
+--- !u!114 &1928091944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1928091940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cea8244f614046e59f8abc646a4cf89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &1928091945
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1928091940}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &2055800428
 GameObject:
   m_ObjectHideFlags: 0
@@ -689,7 +737,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb071cca6bf024a829290cb0627e8518, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 0}
   Selected_Color: {r: 1, g: 0, b: 0, a: 0}
+  speed: 1
 --- !u!61 &2055800432
 BoxCollider2D:
   m_ObjectHideFlags: 0

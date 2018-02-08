@@ -8,6 +8,7 @@ TagManager:
   - Scene_Manager
   - Ground
   - Ice_Cream
+  - Spotlight_Object
   layers:
   - Default
   - TransparentFX

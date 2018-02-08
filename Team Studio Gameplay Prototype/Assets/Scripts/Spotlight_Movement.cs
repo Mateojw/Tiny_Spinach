@@ -12,7 +12,7 @@ public class Spotlight_Movement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		//transform.Translate (Input.acceleration.x, Input.acceleration.y, 0); // moving our object using the gyroscope
+		transform.Translate (Input.acceleration.x, Input.acceleration.y, 0); // moving our object using the gyroscope
 		//transform.Translate (Input.acceleration.x, 0, 0); // no y
 		//rb.AddForce(new Vector2(Input.acceleration.x/10, 0));
 	}
