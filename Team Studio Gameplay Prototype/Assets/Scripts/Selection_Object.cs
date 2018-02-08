@@ -57,7 +57,8 @@ public class Selection_Object : MonoBehaviour {
 		if (Object_Can_Move) { // checking to see if our object can move setting is on
 			//transform.Translate (Input.acceleration.x, 0, 0); // moving our object using the gyroscope
 			//transform.Rotate(-Vector3.forward,Input.acceleration.x *Time.deltaTime *1000); // ROtation code
-			Vector2 movement = new Vector2(Input.acceleration.x, Input.acceleration.y);
+			//Vector2 movement = new Vector2(Input.acceleration.x, Input.acceleration.y);
+			Vector2 movement = new Vector2(Input.acceleration.x, 0); // no y movement 
 			rb.AddForce(movement*speed*Time.deltaTime);
 			Debug.Log (movement);
 		}

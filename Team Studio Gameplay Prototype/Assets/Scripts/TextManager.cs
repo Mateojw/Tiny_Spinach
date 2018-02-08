@@ -10,6 +10,8 @@ public class TextManager : MonoBehaviour {
 	public string[] textLines;
 	public int currentLine;
 	public int endAtLine;
+	private Ice_Cream_Collide My_Ice_Cream_Collide;
+
 
 
 	// Use this for initialization
@@ -23,7 +25,7 @@ public class TextManager : MonoBehaviour {
 			endAtLine = textLines.Length - 1;
 		}
 
-
+		My_Ice_Cream_Collide = GameObject.Find ("Ground").GetComponent<Ice_Cream_Collide> ();
 
 	}
 
@@ -33,16 +35,18 @@ public class TextManager : MonoBehaviour {
 	void Update () {
 		theText.text = textLines [currentLine];
 
-		if (Input.GetKeyDown (KeyCode.Mouse0)) {
+		if (Input.GetKeyDown (KeyCode.Mouse0) && currentLine < endAtLine ) {
 			currentLine += 1;
 		}
 
-
-		Debug.Log ("hmm");
-
-
-		if (currentLine > endAtLine) {
-			textBox.SetActive (false);
+		Debug.Log ("hello");
+		Debug.Log (My_Ice_Cream_Collide.Grounded);
+		if (My_Ice_Cream_Collide.Grounded == true) {
+			currentLine = 2;
 		}
+
+		//if (currentLine > endAtLine) {
+			//textBox.SetActive (false);
+		//}
 	}
 }
