@@ -9,6 +9,9 @@ TagManager:
   - Ground
   - Ice_Cream
   - Spotlight_Object
+  - longNote
+  - Romeo
+  - Juliet
   layers:
   - Default
   - TransparentFX

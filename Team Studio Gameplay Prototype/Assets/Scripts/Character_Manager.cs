@@ -21,11 +21,12 @@ public class Character_Manager : MonoBehaviour {
 		if (IS_ROMEO) { // if the selected character is romeo
 			Romeo.gameObject.tag = "Spotlight_Object"; // chanigng romeos tag
 			Juliet.gameObject.tag = "Untagged"; // untagginf our juliet object
-
+			Debug.Log("romeo");
 		} else { // if the selected character is not romeo
 
 			Juliet.gameObject.tag = "Spotlight_Object"; // chanigng romeos tag
 			Romeo.gameObject.tag = "Untagged"; // untagginf our juliet object
+			Debug.Log("juliet");
 		}
 		
 	}
