@@ -731,6 +731,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Start_Spoghtlight: {fileID: 188094367}
   Start_Meter: {fileID: 1928091944}
+  Start_Note: {fileID: 0}
   Start_Text: {fileID: 201834757}
 --- !u!114 &382359169
 MonoBehaviour:
@@ -3944,7 +3945,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1553817506}
   m_Layer: 0
-  m_Name: niotes
+  m_Name: notes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
