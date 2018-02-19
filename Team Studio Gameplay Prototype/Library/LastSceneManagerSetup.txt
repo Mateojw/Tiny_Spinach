@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Lighting_merged.unity
+- path: Assets/Scenes/ChangeColor-Mateo.unity
   isLoaded: 1
   isActive: 1
